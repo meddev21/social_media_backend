@@ -81,13 +81,37 @@ AUTH_USER_MODEL = 'users.CustomUser'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.sqlite3',
+#        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#    }
+#}
 
+#DATABASES = {
+#    "default": {
+#        "ENGINE": "django.db.backends.postgresql",
+#        "NAME": "railway",
+#        "USER": "postgres",
+#        "PASSWORD": "ak4Ioxp4rrLIcjTobF7N",
+#        "HOST": "containers-us-west-107.railway.app",
+#        "PORT": 5685,
+#    }
+#}
+
+DATABASES = {
+      'default': {
+          'ENGINE': 'django.db.backends.mysql',
+          'NAME': 'railway',
+          'USER': 'root',
+          'PASSWORD': '3DOlg5q1BQJ4PdzkY3zu',
+          'HOST': 'containers-us-west-48.railway.app',
+          'PORT': '6933',
+          'OPTIONS': {
+              'sql_mode': 'traditional',
+          }
+      }
+ }
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
